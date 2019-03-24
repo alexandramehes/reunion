@@ -1,1 +1,64 @@
-easy win?
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Szandi's nutrition </title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<style>
+			.background-color1 {
+				background-color: #FFE4E1;
+			}
+			.background-color2 {
+				background-color: #FF1493;
+			}
+			.dolt {
+				font-style: oblique;
+				color : white;
+			}
+			div.allapot:hover{
+				width: 400px;
+				background-color: #ff9999;
+			}
+			.oldalsav {
+				color:  #660066;
+				background-color:#ff4d88;
+				}			
+		</style>
+	</head>
+
+	<header>
+			<div class="background-color2">
+			<div class= "dolt"> <h2> Szandi's nutrition - Prémium táplálékkiegésztíők verhetetlen árakon <h2></div></div>
+			</header> 
+
+
+	<body>
+		<aside style="float:right">
+			<div class= "oldalsav">
+			<h1>Rólunk írták:</h1>
+			<blockquote style="font-style: oblique">
+				"A kedvenc internetes áruházam!"<br>
+				"Gyors, korrekt, megfizethető!"<br>
+				"Csak innen rendelem a fehérjéimet."<br>
+				"Segítőkész ügyfélszolgálat,gyors válaszadás."
+
+			</blockquote>
+		</div>
+		</aside>
+		<nav class="background-color1">		
+					<ul>
+					<div class="allapot"><li><a href="fooldal.html"> Főoldal </a> </li> </div>
+					<div class="allapot"><li><a href="termekek.html"> Termékeink </a> </li> </div>
+					<div class="allapot"><li><a href=".regisztracio.html"> Regisztráció </a> </li> </div>
+					<div class="allapot"><li><a href="gyik.html"> Gyakran ismételt kérdések </a> </li> </div>
+					<div class="allapot"><li><a href="akciok.html"> Akciók </a> </li> </div>
+				</ul>
+				<img src="fooldal.jpg" width=auto height=350>
+			</nav>
+		</div>
+	</body>
+
+	<footer>
+		<a>© 2014 - 2019 Szandi's nutrition official </a> 
+	</footer>
+</html>

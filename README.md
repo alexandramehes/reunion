@@ -1,1 +1,1 @@
-# reunion; gondolom ide kellene feljegyezni, hogy min modositottunk
+# reunion; fingom nincs mi ez

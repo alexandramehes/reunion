@@ -26,10 +26,35 @@
 		.topnav a.active {
   			background-color:  #ffcce6;
   			color: black;
-		}	
+		}
+		.body {
+			background-color:  #e6faff;
+			color:#0000b3;
+		}
+		img {
+  			border-radius: 50%;
+			}
+		@media screen and (max-width: 992px) {
+  			body {
+    			background-color: grey;
+  				}
+
+  		@media screen and (min-width: 600px) {
+  			body {
+    			background-color: yellow;
+  				}
+
+  		@media print {
+  			img {
+  				display : none;
+  			}
+  		}
+}
+
 	</style>
 
 	<header>
+		<nav>
 		<div class="topnav">
   			<a class="active" href="fooldal.html">Főoldal</a>
   			<a href="termekek.html">Termékek</a>
@@ -37,9 +62,18 @@
   			<a href="gyik.html">GYIK</a>
   			<a href="akciok.html">Akciók</a>
 </div>
+</nav>
 	</header>
-<body>
-	<img src="fooldal.jpg" width=auto height=350>
+<body class="body">
+	<main>
+		<ul>
+			<h2>Üdvözöllek a weboldalon!A legjobb helyen jársz, ha:</h2>
+  			<li>a legjobb árakon vásárolnál</li>
+  			<li>számodra fontos a megfizethető minőség</li>
+  			<li>a legkedvezőbb akciókat keresed</li>
+		</ul>
+
+	<img src="fooldal.jpg" width=700 height=350>
 	<aside style="float:right">
 			<div class= "oldalsav">
 			<h1>Rólunk írták:</h1>
@@ -52,6 +86,7 @@
 			</blockquote>
 		</div>
 		</aside>
+	</main>
 </body>
 
 <footer>

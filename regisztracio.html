@@ -3,12 +3,28 @@
 <head>
 	<meta charset="utf-8">
 </head>
-	<title>Szandi's nutrition</title>
+	<title>ReuniON nutrition</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<style>
+	
+		th {vertical-align: middle;} 
+		td {vertical-align: middle;}  
+		
+		.middle {
+			vertical-align: middle;
+			border-style: none; border-spacing: 0px;
+			padding: 0px; margin: 0px;
+			border-collapse: collapse;
+		}  
+		
+		input, select, textarea {
+		margin-bottom:20px;
+		}
+		
 		.topnav {
   			background-color: #ff0066;
   			overflow: hidden;
+			font-family: "Georgia", cursive, sans-serif;
 		}
   		.topnav a {
   			float: left;
@@ -18,7 +34,6 @@
   			text-decoration: none;
   			font-size: 17px;
 		}
-
 		.topnav a:hover {
   			background-color: #ddd;
   			color: black;
@@ -26,22 +41,67 @@
 		.topnav a.active {
   			background-color:  #ffcce6;
   			color: black;
+		}
+			
+		.body {
+			background-color:  #F3FDFF;
+			color:#0000b3;
+			font-family: "Georgia", cursive, sans-serif;
 		}	
 	</style>
 
 	<header>
 		<div class="topnav">
-  			<a  href="fooldal.html">Főoldal</a>
-  			<a href="termekek.html">Termékek</a>
-  			<a class="active" href="regisztracio.html">Regisztráció</a>
-  			<a href="gyik.html">GYIK</a>
-  			<a  href="akciok.html">Akciók</a>
+  			<a  href="fooldal.html"> Főoldal </a>
+  			<a href="termekek.html"> Termékek </a>
+  			<a class="active" href="regisztracio.html"> Regisztráció </a>
+  			<a href="gyik.html"> GYIK </a>
+  			<a  href="akciok.html"> Akciók </a>
 </div>
 	</header>
-<body>
+<body class="body">
+	<main>
+	
+		<br> <h2> <center> Regisztráció </center> </h2> <br>
+		<hr>
+		
+		<table class="middle">
+			<tr>
+				<td> <label> <center> <h4> E-mail cím </h4> </label> </td>
+				<td> <label> <center> <input type="email" name="email" value="" placeholder="E-mail cím" tabindex="1" /> </label> </td>
+			</tr>
+			<tr>
+				<td> <label for="pwid"> <center> <h4> Jelszó </h4> </label> </td>
+				<td> <center> <input type="password" name="pw" id="pwid" value="" placeholder="Jelszó" required tabindex="2" /> </td>
+			</tr>
+			<tr>
+				<td> <label> <center> <h4> Vezetéknév </h4> </label> </td>
+				<td> <center> <input type="text" name="veznev" value="" placeholder="Vezetéknév" maxlength="20" autofocus tabindex="3" /> </td>
+			</tr>
+			<tr>
+				<td> <label> <center> <h4> Keresztnév </h4> </label> </td>
+				<td> <center> <input type="text" name="kernev" value="" placeholder="Keresztnév" maxlength="20" autofocus tabindex="4" /> </td>
+			</tr>
+			<tr>
+				<td> <label> <center ><h4> Születési dátum </h4> </label> </td>
+				<td> <center> <input type="date" name="date" value="" min="1900-01-01" max="2004-03-30" tabindex="5" /> </td>
+			</tr>
+			<tr>
+				<td> <label> <center> <h4> Telefonszám </h4> </label> </td>
+				<td> <center> <input type="tel" name="tel" value="" placeholder="Telefonszám" tabindex="6" /> </td>
+			</tr>
+		</table><br>
+				
+		<center> <input type="checkbox" name="accept1" value="" placeholder="" tabindex="7" /> <label> Szeretnék hírlevelet kapni az akciókról, újdonságokról. </label> <br>
+		<input type="checkbox" name="accept2" value="" placeholder="" tabindex="8" /> <label> Hozzájárulok, hogy a ReuniON Nutrition az itt megadott személyes adataimat <br>
+			az Adatkezelési Tájékoztatóban rögzített, regisztrációs céllal kezelje. </label> <br><br>
+		<input type="submit" value="Küldés" />
+		</h4> </center> <br><br><br>
+		
+	</main>
 </body>
 
 <footer>
-		<a>© 2014 - 2019 Szandi's nutrition official </a> 
+		<a> <font face="Georgia"> © 2014 - 2019 ReuniON Nutrition official </font> </a> 
 	</footer>
 </hmtl>

@@ -7,18 +7,14 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<style>
 	
-		th {vertical-align: middle;} 
-		td {vertical-align: middle;}  
-		
-		.middle {
-			vertical-align: middle;
-			border-style: none; border-spacing: 0px;
-			padding: 0px; margin: 0px;
-			border-collapse: collapse;
-		}  
+		table.padded-table td, th {
+			padding: 10px 40px 10px 40px;
+			text-align: center;
+			font-size: 17px;
+		}
 		
 		input, select, textarea {
-		margin-bottom:20px;
+			margin-bottom: 20px;
 		}
 		
 		.topnav {
@@ -47,7 +43,14 @@
 			background-color:  #F3FDFF;
 			color:#0000b3;
 			font-family: "Georgia", cursive, sans-serif;
-		}	
+		}
+		.textshadow {
+			color: white;
+			text-shadow: 1px 1px 2px black, 0 0 20px #ff0055;
+			font-family: "Georgia", cursive, sans-serif;
+			font-size: 35px;
+		}
+	
 	</style>
 
 	<header>
@@ -62,46 +65,49 @@
 <body class="body">
 	<main>
 	
-		<br> <h2> <center> Regisztráció </center> </h2> <br>
+		<br><div class="textshadow"><center> Regisztráció </div><br>
 		<hr>
 		
-		<table class="middle">
+		<br><table border="1" align="center" class="padded-table">
+		
 			<tr>
-				<td> <label> <center> <h4> E-mail cím </h4> </label> </td>
-				<td> <label> <center> <input type="email" name="email" value="" placeholder="E-mail cím" tabindex="1" /> </label> </td>
+				<th colspan="2"> <label> Kérjük, adja meg az adatait! </label> </th>
 			</tr>
 			<tr>
-				<td> <label for="pwid"> <center> <h4> Jelszó </h4> </label> </td>
-				<td> <center> <input type="password" name="pw" id="pwid" value="" placeholder="Jelszó" required tabindex="2" /> </td>
+				<td> <label> E-mail cím </label> </td>
+				<td> <label> <input type="email" name="email" value="" placeholder="E-mail cím" tabindex="1" size="25" /> </label> </td>
 			</tr>
 			<tr>
-				<td> <label> <center> <h4> Vezetéknév </h4> </label> </td>
-				<td> <center> <input type="text" name="veznev" value="" placeholder="Vezetéknév" maxlength="20" autofocus tabindex="3" /> </td>
+				<td> <label for="pwid"> Jelszó </label> </td>
+				<td> <input type="password" name="pw" id="pwid" value="" placeholder="Jelszó" required tabindex="2" size="25" /> </td>
 			</tr>
 			<tr>
-				<td> <label> <center> <h4> Keresztnév </h4> </label> </td>
-				<td> <center> <input type="text" name="kernev" value="" placeholder="Keresztnév" maxlength="20" autofocus tabindex="4" /> </td>
+				<td> <label> Vezetéknév </label> </td>
+				<td> <input type="text" name="veznev" value="" placeholder="Vezetéknév" maxlength="20" autofocus tabindex="3" size="25" /> </td>
 			</tr>
 			<tr>
-				<td> <label> <center ><h4> Születési dátum </h4> </label> </td>
-				<td> <center> <input type="date" name="date" value="" min="1900-01-01" max="2004-03-30" tabindex="5" /> </td>
+				<td> <label> Keresztnév </label> </td>
+				<td> <input type="text" name="kernev" value="" placeholder="Keresztnév" maxlength="20" autofocus tabindex="4" size="25" /> </td>
 			</tr>
 			<tr>
-				<td> <label> <center> <h4> Telefonszám </h4> </label> </td>
-				<td> <center> <input type="tel" name="tel" value="" placeholder="Telefonszám" tabindex="6" /> </td>
+				<td> <label> Születési dátum </label> </td>
+				<td> <input type="date" name="date" value="" min="1900-01-01" max="2004-03-30" tabindex="5" /> </td>
+			</tr>
+			<tr>
+				<td> <label> Telefonszám </label> </td>
+				<td> <input type="tel" name="tel" value="" placeholder="Telefonszám" tabindex="6" size="25" /> </td>
 			</tr>
 		</table><br>
 				
 		<center> <input type="checkbox" name="accept1" value="" placeholder="" tabindex="7" /> <label> Szeretnék hírlevelet kapni az akciókról, újdonságokról. </label> <br>
 		<input type="checkbox" name="accept2" value="" placeholder="" tabindex="8" /> <label> Hozzájárulok, hogy a ReuniON Nutrition az itt megadott személyes adataimat <br>
-			az Adatkezelési Tájékoztatóban rögzített, regisztrációs céllal kezelje. </label> <br><br>
-		<input type="submit" value="Küldés" />
-		</h4> </center> <br><br><br>
+			az Adatkezelési Tájékoztatóban rögzített, regisztrációs céllal kezelje. </label> <br> <br>
+		<input type="submit" value="Küldés" /> <br><br><br>
 		
 	</main>
 </body>
 
 <footer>
-		<a> <font face="Georgia"> © 2014 - 2019 ReuniON Nutrition official </font> </a> 
+		<a> <font face="Georgia"><i> © 2014 - 2019 ReuniON Nutrition official </font> </a> 
 	</footer>
 </hmtl>

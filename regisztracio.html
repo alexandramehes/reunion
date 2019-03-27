@@ -97,12 +97,36 @@
 				<td> <label> Telefonszám </label> </td>
 				<td> <input type="tel" name="tel" value="" placeholder="Telefonszám" tabindex="6" size="25" /> </td>
 			</tr>
+			<tr>
+				<td> <label> Korrában vásárolt már webáruházunkban? </label> </td>
+				<td> <label for="radio1"> Igen </label>
+						<input type="radio" id="radio1" name="radio" value="1" placeholder="" tabindex="7" />
+					<label for="radio2"> Nem </label>
+						<input type="radio" id="radio2" name="radio" value="2" placeholder="" tabindex="8" />
+				 </td>
+			</tr>
+			<tr>
+				<td> <label for="selection"> Hol talált rá weboldalunkra? </label> </td>
+				<td> <select name="selection" id="selector" multiple size="4">
+						<option value="1"> Internetes hirdetés alapján </option>
+						<option value="2"> Ismerős ajánlására </option>
+						<option value="3"> Edzőteremben hallottam </option>
+						<option value="4"> FaceBook-on </option>
+						<option value="5"> Szórólapon </option>
+						<option value="6"> Egyéb újságban, kiadványban </option>
+					</select>
+				</td>
+			</tr>
+			
 		</table><br>
 				
-		<center> <input type="checkbox" name="accept1" value="" placeholder="" tabindex="7" /> <label> Szeretnék hírlevelet kapni az akciókról, újdonságokról. </label> <br>
-		<input type="checkbox" name="accept2" value="" placeholder="" tabindex="8" /> <label> Hozzájárulok, hogy a ReuniON Nutrition az itt megadott személyes adataimat <br>
+		<center> <input type="checkbox" name="accept1" value="" placeholder="" tabindex="9" /> <label> Szeretnék hírlevelet kapni az akciókról, újdonságokról. </label> <br>
+		<input type="checkbox" name="accept2" value="" placeholder="" tabindex="10" /> <label> Hozzájárulok, hogy a ReuniON Nutrition az itt megadott személyes adataimat <br>
 			az Adatkezelési Tájékoztatóban rögzített, regisztrációs céllal kezelje. </label> <br> <br>
-		<input type="submit" value="Küldés" /> <br><br><br>
+
+		<form method="get" action="regisztracio2.html">
+			<input type="submit" value="Küldés" />
+		</form> <br><br><br><hr>
 		
 	</main>
 </body>

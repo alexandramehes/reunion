@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<hmtl>
+<head>
+	<meta charset="utf-8">
+</head>
+	<title>ReuniON nutrition</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+	
+		table.padded-table td, th {
+			padding: 10px 40px 10px 40px;
+			text-align: center;
+			font-size: 17px;
+		}
+		
+		input, select, textarea {
+			margin-bottom: 20px;
+		}
+		
+		.topnav {
+  			background-color: #ff0066;
+  			overflow: hidden;
+			font-family: "Georgia", cursive, sans-serif;
+		}
+  		.topnav a {
+  			float: left;
+ 			 color: #f2f2f2;
+  			text-align: center;
+  			padding: 14px 16px;
+  			text-decoration: none;
+  			font-size: 17px;
+		}
+		.topnav a:hover {
+  			background-color: #ddd;
+  			color: black;
+		}
+		.topnav a.active {
+  			background-color:  #ffcce6;
+  			color: black;
+		}
+			
+		.body {
+			background-color:  #F3FDFF;
+			color:#0000b3;
+			font-family: "Georgia", cursive, sans-serif;
+		}
+		.textshadow {
+			color: white;
+			text-shadow: 1px 1px 2px black, 0 0 20px #ff0055;
+			font-family: "Georgia", cursive, sans-serif;
+			font-size: 35px;
+		}
+		
+				* {
+			box-sizing: border-box;
+			
+		}
+		.column {
+			float: left;
+			width: 25%;
+			padding: 5px;
+		}
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+		
+		
+		
+		.swing {
+			animation: swing ease-in-out 1s infinite alternate;
+			transform-origin: center -20px;
+			float:left;
+			box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+		}
+		.swing img {
+			display: block;
+		}
+		.swing:after{
+			content: '';
+			position: absolute;  
+			width: 20px; height: 20px;  
+			border: 1px solid #999;
+			top: -10px; left: 50%;
+			z-index: 0;
+			border-bottom: none;
+			border-right: none;
+			transform: rotate(45deg);
+		}
+
+		.swing:before{
+			content: '';
+			position: absolute;
+			z-index: 5;
+			border-radius: 50% 50%;
+			background: #000;
+		}
+ 
+		@keyframes swing {
+			0% {transform: rotate(3deg);}
+			100% {transform: rotate(-3deg);}
+		}
+
+
+		span {
+			background-color: pink;
+			font-family: Garamond;
+			font-size: 21px;
+		}
+		.group1, div.group2 {
+			background-color: #FFEBF3;
+			font-size: 17px; 
+			font-family: Garamond;
+		}
+		.pseudo::before {
+			position:absolute;
+			top:380px;
+			left:900px;
+			content: "";
+			width:380px;
+			height:3px;
+			background-color: pink;
+		}
+		a[target=_blank] {
+			font-size: 20px;
+		}
+		div.allapot:hover {
+			background-color: pink;
+		}
+	    div::selection {
+			background-color: #F06DBA;
+			color: white;
+		}
+	
+	
+	</style>
+
+	<header>
+		<div class="topnav">
+  			<a  href="fooldal.html"> Főoldal </a>
+  			<a class="active" href="termekek.html"> Termékek </a>
+  			<a href="regisztracio.html"> Regisztráció </a>
+  			<a href="gyik.html"> GYIK </a>
+  			<a  href="akciok.html"> Akciók </a>
+</div>
+	</header>
+<body class="body">
+	<main>
+	
+		<br> <div class="textshadow"> <center> Vegan Protein </div> <br>
+		<hr>
+		
+		
+	<br><table align="center" class="padded-table">
+		
+			<tr>
+				<td> <figure class="swing">
+					<center> <img src="item2.png" alt="item2" style="width:75%">
+					</figure>  
+				</td>
+				<td>
+					<label> <center> <span> Woman's Best Vegan Protein </span> </label> <br style="line-height:50px;" />
+					
+					<label> <center> <div class="group1"> A Woman's Best Vegan Protein-je, amely barna rizs<br>és borsófehérje keverékéből készül, kiváló minőségű fehérjeforrás!<br>
+					80%-os fehérjetartalommal és gazdag aminosav profillal büszkélkedik,<br>így kiváló választás azoknak, akik szeretnék növeli a napi<br>fehérjebevitelüket tejtermék mentesen. </div> <br>
+					
+					<div class="pseudo"> Mik a Woman's Best Vegan Protein előnyei? </div>
+					
+					<br> <div class="group2"> Mentes mesterséges összetevőktől, édesítőszertől vagy szójától,<br>így a teljesen természetes vegán fehérjénk 24g fehérjét biztosít adagonként,
+					<br>ami hozzájárul az izomtömeg építéséhez és fenntartásához<br>- alapvető bármilyen edzésmunkához.<br>Ezen felül alacsony cukor és telített zsírtartalommal bír,
+					<br>és kevesebb sót tartalmaz az egyéb növényi alapú alternatíváknál!<br>Tökéletes választás az általános egészség támogatására. </div> </label>
+				</td> 
+			</tr>
+		</table>
+		
+		<center> <a href="termekek.html" target="_top"> Vissza a termékekhez </a>
+		<br>
+		
+		<br style="line-height:20px;" /><form method="get" action="">
+			<center> <input type="submit" value="Kosárba!" />
+		</form> <br style="line-height:50px;" /><hr>
+		
+		</main>
+		</body>
+
+<footer>
+		<a> <font face="Georgia"><i> © 2014 - 2019 ReuniON Nutrition official </font> </a> 
+	</footer>
+</hmtl>
+			
+			
